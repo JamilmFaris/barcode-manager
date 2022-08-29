@@ -1,0 +1,64 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Barcode Manager</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="inventory_drone">Inventory Drone</string>
+    <string name="access_your_account">access your account</string>
+    <string name="employee_id">Employee ID</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="or">or</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="name">name</string>
+    <string name="forgot_your_password">Forgot Your Password?</string>
+    <string name="send_instruction">send instruction</string>
+    <string name="products">Products</string>
+    <string name="logout">logout</string>
+    <string name="add_item">+ add item</string>
+    <string name="export">export</string>
+    <string name="clear">clear</string>
+    <string name="scan">scan</string>
+    <string name="navigation_drawer_open">open navigation drawer</string>
+    <string name="navigation_drawer_close">close navigation drawer</string>
+    <string name="add_sheet">add sheet</string>
+    <string name="clear_this_sheet_only">clear this sheet only</string>
+    <string name="clear_sheets">clear sheets</string>
+    <string name="sheet_is_not_existed">Sheet is not existed</string>
+    <string name="sheet_is_cleared">Sheet is cleared</string>
+    <string name="sheets_are_cleared">Sheets are cleared</string>
+    <string name="there_is_no_sheet_to_clear">There is no sheet to clear you can add one in the ADD SHEET button above</string>
+    <string name="no_sheet_is_selected">no sheet is selected</string>
+    <string name="there_are_no_more_sheets">There are no more sheets</string>
+    <string name="new_product">new product</string>
+    <string name="type_here">type here</string>
+    <string name="generate_new_barcode">Generate new barcode</string>
+    <string name="print_barcode">Print barcode</string>
+    <string name="copy_barcode">Copy barcode</string>
+    <string name="cancel">Cancel</string>
+    <string name="required">*required</string>
+    <string name="new_item">new item</string>
+    <string name="save">save</string>
+    <string name="or_add_a_new_category">or add a new category</string>
+    <string name="profile_is_existed">profile is existed</string>
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting</string>
+    <string name="title_connected_to">connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">not connected</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- Options Menu -->
+    <string name="secure_connect">Connect a device - Secure</string>
+    <string name="insecure_connect">Connect a device - Insecure</string>
+    <string name="discoverable">Make discoverable</string>
+    <string name="scan_or_generate_barcode">scan or generate barcode</string>
+</resources>

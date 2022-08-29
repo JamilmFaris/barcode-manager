@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/barcode_generate"
+        android:title="@string/generate_new_barcode" />
+
+    <item
+        android:id="@+id/barcode_print"
+        android:title="@string/print_barcode" />
+
+    <item
+        android:id="@+id/barcode_copy"
+        android:title="@string/copy_barcode" />
+
+    <item
+        android:id="@+id/cancel"
+        android:title="@string/cancel" />
+</menu>
