@@ -211,19 +211,19 @@ public class ItemsActivity extends AppCompatActivity {
                             @Override
                             public void onStart() {
                                 Toast.makeText(ItemsActivity.this
-                                        , "started converting to excel file", Toast.LENGTH_SHORT).show();
+                                        , R.string.started_converting_to_excel, Toast.LENGTH_SHORT).show();
                             }
 
                             @Override
                             public void onCompleted(String filePath) {
                                 Toast.makeText(ItemsActivity.this
-                                        , "completed", Toast.LENGTH_SHORT).show();
+                                        , R.string.completed, Toast.LENGTH_SHORT).show();
                             }
 
                             @Override
                             public void onError(Exception e) {
                                 Toast.makeText(ItemsActivity.this
-                                        , "error " + e.toString(), Toast.LENGTH_LONG).show();
+                                        , R.string.error+ e.toString(), Toast.LENGTH_LONG).show();
 
                             }
                         });
@@ -269,7 +269,7 @@ public class ItemsActivity extends AppCompatActivity {
     public void addNewSheet(View view){
         //pops up a window to let the user input new sheet's information
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Creating new sheet");
+        builder.setTitle(R.string.creating_new_sheet);
         View approveLayout = getLayoutInflater().inflate(R.layout.dialog_approve_new_sheet, null);
         builder.setView(approveLayout);
         builder.setPositiveButton("create sheet", new DialogInterface.OnClickListener() {
@@ -287,21 +287,21 @@ public class ItemsActivity extends AppCompatActivity {
                 }
                 if(redundant){
                     Toast.makeText(ItemsActivity.this,
-                            "Sheet is redundant", Toast.LENGTH_SHORT).show();
+                            R.string.sheet_is_redundant, Toast.LENGTH_SHORT).show();
                 }
                 else if(sheetName.isEmpty()){
                     Toast.makeText(ItemsActivity.this,
-                            "Sheet is empty", Toast.LENGTH_SHORT).show();
+                            R.string.sheet_is_empty, Toast.LENGTH_SHORT).show();
                 }
                 else{
                     SHEETS.add(sheetName);
                     arrayAdapter.notifyDataSetChanged();
                     Toast.makeText(ItemsActivity.this,
-                            "Sheet is created", Toast.LENGTH_SHORT).show();
+                            R.string.sheet_is_created, Toast.LENGTH_SHORT).show();
                 }
             }
         });
-        builder.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(getString(R.string.cancel), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 dialogInterface.cancel();
@@ -318,10 +318,10 @@ public class ItemsActivity extends AppCompatActivity {
         View approveLayout = getLayoutInflater().inflate(R.layout.dialog_clear, null);
         builder.setView(approveLayout);
 
-        builder.setTitle("Clearing sheet");
-        builder.setMessage("What do you want to do");
+        builder.setTitle(R.string.clearing_sheet);
+        builder.setMessage(R.string.what_do_you_want_to_do);
         builder.setCancelable(true);
-        builder.setPositiveButton("clear", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(R.string.clear, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int j) {
                 RadioGroup radioGroup =  approveLayout.findViewById(R.id.set_clear_type);
@@ -379,7 +379,7 @@ public class ItemsActivity extends AppCompatActivity {
                             sheetSelected = arrayAdapter.getItem(0).toString();
                         }catch (IndexOutOfBoundsException e){
                             Toast.makeText(ItemsActivity.this,
-                                    "There is something wrong select sheet again", Toast.LENGTH_SHORT).show();
+                                    R.string.there_is_something_wrong_select_sheet_again, Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), ItemsActivity.class));
                         }
                         refreshDataBase();

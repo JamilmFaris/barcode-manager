@@ -52,12 +52,12 @@ public class Signup extends AppCompatActivity {
         if(employeeID.getText().toString().isEmpty() || name.getText().toString().isEmpty() ||
                 email.getText().toString().isEmpty() ||password.getText().toString().isEmpty() ){
             Toast.makeText(Signup.this,
-                    "Enter missing data", Toast.LENGTH_SHORT).show();
+                    R.string.enter_missing_data, Toast.LENGTH_SHORT).show();
         }
         // if the password's length is less than 9 letters don't signup
         else if(password.getText().toString().length() < 9){
             Toast.makeText(Signup.this,
-                    "password is under 9 letters", Toast.LENGTH_SHORT).show();
+                    R.string.password_is_under_9_letters, Toast.LENGTH_SHORT).show();
         }
         else{
             // if the profile exists previously in the database don't signup
@@ -71,7 +71,7 @@ public class Signup extends AppCompatActivity {
                 db.addNewAccount(Integer.parseInt(employeeID.getText().toString()), name.getText().toString()
                         , email.getText().toString(), password.getText().toString());
                 Toast.makeText(Signup.this,
-                        "Registered successfully", Toast.LENGTH_SHORT).show();
+                        R.string.registered_successfully, Toast.LENGTH_SHORT).show();
                 // go to the items activity
                 startActivity(new Intent(Signup.this, ItemsActivity.class));
             }

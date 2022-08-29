@@ -79,22 +79,22 @@ public class AddItemActivity extends AppCompatActivity {
         }
 
 
-        data.add(new Pair<>(informationText, "name"));
+        data.add(new Pair<>(informationText, getString(R.string.name)));
         data.add(new Pair<>(informationName, ""));
 
-        data.add(new Pair<>(informationText, "Description"));
+        data.add(new Pair<>(informationText, getString(R.string.description)));
         data.add(new Pair<>(informationDescription, ""));
 
-        data.add(new Pair<>(informationText, "Quantity"));
+        data.add(new Pair<>(informationText, getString(R.string.quantity)));
         data.add(new Pair<>(informationQuantity, ""));
 
-        data.add(new Pair<>(informationText, "Category"));
+        data.add(new Pair<>(informationText, getString(R.string.category)));
         data.add(new Pair<>(informationCategory, ""));
 
-        data.add(new Pair<>(informationText, "Notes"));
+        data.add(new Pair<>(informationText, getString(R.string.notes)));
         data.add(new Pair<>(informationNotes, ""));
 
-        data.add(new Pair<>(informationText, "Location"));
+        data.add(new Pair<>(informationText, getString(R.string.location)));
         data.add(new Pair<>(informationLocation, ""));
 
 
@@ -115,21 +115,21 @@ public class AddItemActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(barcodeText.isEmpty() ){
                     Toast.makeText(AddItemActivity.this,
-                            "scan or generate barcode", Toast.LENGTH_SHORT).show();
+                            R.string.scan_or_generate_barcode, Toast.LENGTH_SHORT).show();
                 }
                 else if(category.isEmpty()){
                     Toast.makeText(AddItemActivity.this,
-                            "input category", Toast.LENGTH_SHORT).show();
+                            R.string.input_category, Toast.LENGTH_SHORT).show();
                 }
                 else if(name.isEmpty() || description.isEmpty() ||
                          notes.isEmpty() || location.isEmpty()){
                     Toast.makeText(AddItemActivity.this,
-                            "all data are required", Toast.LENGTH_SHORT).show();
+                            R.string.all_data_are_required, Toast.LENGTH_SHORT).show();
                 }
                 else if(ItemsActivity.sheetSelected.isEmpty()){
                     // if there is no sheets to add to popup a message then go to the items activity again
                     Toast.makeText(AddItemActivity.this,
-                            "there is no sheets to add to\nadd one then try again", Toast.LENGTH_LONG).show();
+                            R.string.there_is_no_sheets_to_add, Toast.LENGTH_LONG).show();
                     onBackPressed();
                 }
                 else{
@@ -137,7 +137,7 @@ public class AddItemActivity extends AppCompatActivity {
                     db.addNewItem(new Item(barcodeText, name, description, quantity, category
                             , notes, location, ItemsActivity.sheetSelected));
                     Toast.makeText(AddItemActivity.this,
-                            "item added successfully", Toast.LENGTH_SHORT).show();
+                            R.string.item_added_successfully, Toast.LENGTH_SHORT).show();
 
                     category = "";
                     name = "";

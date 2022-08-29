@@ -38,7 +38,7 @@ public class ProductInformationBarcodeViewHolder extends RecyclerView.ViewHolder
                             case R.id.barcode_generate:
                                 AddItemActivity.barcodeText = /*"barcode : " +*/ generateBarcode(new DroneSheetDB(context));
                                 Toast.makeText(context,
-                                        "Barcode generated", Toast.LENGTH_SHORT).show();
+                                        R.string.barcode_generated, Toast.LENGTH_SHORT).show();
                                 break;
                             case R.id.barcode_print :
                                 if(AddItemActivity.barcodeText.isEmpty()){
@@ -60,7 +60,7 @@ public class ProductInformationBarcodeViewHolder extends RecyclerView.ViewHolder
                                     ClipData clip = ClipData.newPlainText("", AddItemActivity.barcodeText);
                                     clipboard.setPrimaryClip(clip);
                                     Toast.makeText(context,
-                                            "Copied to clipboard!", Toast.LENGTH_SHORT).show();
+                                            R.string.copied_to_clipboard, Toast.LENGTH_SHORT).show();
                                 }
                                 break;
                             case R.id.cancel:
@@ -86,7 +86,8 @@ public class ProductInformationBarcodeViewHolder extends RecyclerView.ViewHolder
             }
             existed = db.barcodeExisted(cur.toString());
         }
-        button.setText("your barcode is : " + cur.toString());
+        button.setText(R.string.your_barcode_is);
+        button.setText(button.getText() + " : " + cur.toString());
         return cur.toString();
     }
 }

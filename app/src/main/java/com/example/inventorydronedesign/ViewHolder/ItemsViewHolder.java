@@ -23,9 +23,16 @@ public class ItemsViewHolder extends RecyclerView.ViewHolder {
     }
     public void bind(Item item){
         barcode.setText(  item.barcode);
-        name.setText("name : " + item.name);
-        description.setText("description : " + item.description);
-        category.setText("category : " + item.category);
-        counter.setText("quantity : " + String.valueOf(item.quantity));
+        name.setText(R.string.name);
+        name.setText(name.getText() + " : " + item.name);
+
+        description.setText(R.string.description);
+        description.setText(description.getText() + " : " + item.description);
+
+        category.setText(R.string.category);
+        category.setText(category.getText() + " : " + item.category);
+
+        counter.setText(R.string.quantity);
+        counter.setText(counter.getText() + " : " + String.valueOf(item.quantity));
     }
 }

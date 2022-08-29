@@ -62,13 +62,13 @@ public class ItemToExportActivity extends AppCompatActivity {
         String locationText = item.location;
         String sheetText = item.sheet;
         barcode.setText(barcodeText);
-        name.setText("name : " + nameText);
-        description.setText("description : " + descriptionText);
-        category.setText("category : " + categoryText);
-        quantity.setText("quantity : " + String.valueOf(quantityText));
-        notes.setText("notes : " + notesText);
-        location.setText("location : " + locationText);
-        sheet.setText("sheet : " + sheetText);
+        name.setText(getString(R.string.name) + " : " + nameText);
+        description.setText(getString(R.string.description) + " : " + descriptionText);
+        category.setText(getString(R.string.category) + " : " + categoryText);
+        quantity.setText(getString(R.string.quantity) + " : " + String.valueOf(quantityText));
+        notes.setText(getString(R.string.notes) + " : " + notesText);
+        location.setText(getString(R.string.location) + " : " + locationText);
+        sheet.setText(getString(R.string.sheet) + " : " + sheetText);
 
 
         //create image
@@ -101,19 +101,19 @@ public class ItemToExportActivity extends AppCompatActivity {
                             @Override
                             public void onStart() {
                                 Toast.makeText(ItemToExportActivity.this
-                                        , "started converting to excel file", Toast.LENGTH_SHORT).show();
+                                        , R.string.started_converting_to_excel, Toast.LENGTH_SHORT).show();
                             }
 
                             @Override
                             public void onCompleted(String filePath) {
                                 Toast.makeText(ItemToExportActivity.this
-                                        , "completed", Toast.LENGTH_SHORT).show();
+                                        , R.string.completed, Toast.LENGTH_SHORT).show();
                             }
 
                             @Override
                             public void onError(Exception e) {
                                 Toast.makeText(ItemToExportActivity.this
-                                        , "error " + e.toString(), Toast.LENGTH_LONG).show();
+                                        , R.string.error + e.toString(), Toast.LENGTH_LONG).show();
 
                             }
                         });
@@ -133,7 +133,7 @@ public class ItemToExportActivity extends AppCompatActivity {
             barcodeImage.setImageBitmap(bitmap);
         } catch(Exception e) {
             e.printStackTrace();
-            Toast.makeText(this, "barcode error " + e.toString(),
+            Toast.makeText(this, getString(R.string.barcode_error) + e.toString(),
                     Toast.LENGTH_SHORT).show();
         }
     }

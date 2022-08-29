@@ -34,7 +34,7 @@ public class ScannerActivity extends AppCompatActivity {
             @Override
             public void onError(@NonNull Throwable thrown) {
                 Toast.makeText(ScannerActivity.this,
-                        "error " + thrown
+                        getString(R.string.error)+ thrown
                         ,Toast.LENGTH_LONG ).show();
             }
         });

@@ -1,6 +1,5 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Barcode Manager</string>
-    <string name="sign_in">Sign In</string>
     <string name="sign_up">Sign Up</string>
     <string name="inventory_drone">Inventory Drone</string>
     <string name="access_your_account">access your account</string>
@@ -10,6 +9,7 @@
     <string name="or">or</string>
     <string name="forgot_password">Forgot password?</string>
     <string name="name">name</string>
+    <string name="description">description</string>
     <string name="forgot_your_password">Forgot Your Password?</string>
     <string name="send_instruction">send instruction</string>
     <string name="products">Products</string>
@@ -33,32 +33,45 @@
     <string name="type_here">type here</string>
     <string name="generate_new_barcode">Generate new barcode</string>
     <string name="print_barcode">Print barcode</string>
-    <string name="copy_barcode">Copy barcode</string>
-    <string name="cancel">Cancel</string>
+    <string name="copy_barcode">Copy barcode to clipboard</string>
+    <string name="cancel">cancel</string>
     <string name="required">*required</string>
     <string name="new_item">new item</string>
     <string name="save">save</string>
     <string name="or_add_a_new_category">or add a new category</string>
     <string name="profile_is_existed">profile is existed</string>
     <string name="send">Send</string>
-    <string name="not_connected">You are not connected to a device</string>
-    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
-    <string name="title_connecting">connecting</string>
-    <string name="title_connected_to">connected to <xliff:g id="device_name">%1$s</xliff:g></string>
-    <string name="title_not_connected">not connected</string>
 
-    <!--  DeviceListActivity -->
-    <string name="scanning">scanning for devices</string>
-    <string name="select_device">select a device to connect</string>
-    <string name="none_paired">No devices have been paired</string>
-    <string name="none_found">No devices found</string>
-    <string name="title_paired_devices">Paired Devices</string>
-    <string name="title_other_devices">Other Available Devices</string>
-    <string name="button_scan">Scan for devices</string>
 
-    <!-- Options Menu -->
-    <string name="secure_connect">Connect a device - Secure</string>
-    <string name="insecure_connect">Connect a device - Insecure</string>
-    <string name="discoverable">Make discoverable</string>
     <string name="scan_or_generate_barcode">scan or generate barcode</string>
+    <string name="input_category">input category</string>
+    <string name="all_data_are_required">all data are required</string>
+    <string name="there_is_no_sheets_to_add">there is no sheets to add to\nadd one then try again</string>
+    <string name="item_added_successfully">item added successfully</string>
+    <string name="started_converting_to_excel">started converting to excel file</string>
+    <string name="completed">completed</string>
+    <string name="error">error</string>
+    <string name="creating_new_sheet">Creating new sheet</string>
+    <string name="sheet_is_redundant">Sheet is redundant</string>
+    <string name="sheet_is_empty">Sheet is empty</string>
+    <string name="sheet_is_created">Sheet is created</string>
+    <string name="clearing_sheet">Clearing sheet</string>
+    <string name="what_do_you_want_to_do">What do you want to do</string>
+    <string name="there_is_something_wrong_select_sheet_again">There is something wrong select sheet again</string>
+    <string name="category">category</string>
+    <string name="quantity">quantity</string>
+    <string name="notes">notes</string>
+    <string name="location">location</string>
+    <string name="sheet">sheet</string>
+    <string name="barcode_error">barcode error</string>
+    <string name="signed_in_successfully">signed in successfully</string>
+    <string name="employee_id_or_email_or_password_is_not_correct">employee id or email or password is not correct</string>
+    <string name="enter_missing_data">Enter missing data</string>
+    <string name="password_is_under_9_letters">password is under 9 letters</string>
+    <string name="registered_successfully">Registered successfully</string>
+    <string name="barcode_generated">Barcode generated</string>
+    <string name="copied_to_clipboard">Copied to clipboard!</string>
+    <string name="your_barcode_is">your barcode is</string>
+    <string name="type">type</string>
+    <string name="sign_in">sign in</string>
 </resources>

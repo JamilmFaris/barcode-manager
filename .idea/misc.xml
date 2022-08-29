@@ -45,6 +45,28 @@
         <entry key="..\:/android_studio_projects/InventoryDroneDesign2/app/src/main/res/layout/white_view.xml" value="0.1" />
         <entry key="..\:/android_studio_projects/InventoryDroneDesign2/app/src/main/res/menu/barcode_menu.xml" value="0.1" />
         <entry key="..\:/android_studio_projects/InventoryDroneDesign2/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/activity_app.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/activity_item_to_export.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/activity_print_barcode.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/activity_product.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/activity_scanner.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/activity_signin.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/activity_signup.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/barcode_holder.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/category_holder.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/description_holder.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/device_adapter_view.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/dialog_approve_new_sheet.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/dialog_clear.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/item_holder.xml" value="0.18" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/location_holder.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/name_holder.xml" value="0.18" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/notes_holder.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/quantity_holder.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/layout/text_holder.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/menu/barcode_menu.xml" value="0.1" />
+        <entry key="..\:/linux_go/android_studio_projects/BarcodeManager/app/src/main/res/menu/menu.xml" value="0.1" />
         <entry key="..\:/linux_go/android_studio_projects/InventoryDroneDesign/app/src/main/res/layout/category_holder.xml" value="0.2" />
       </map>
     </option>

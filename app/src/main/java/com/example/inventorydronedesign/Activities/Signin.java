@@ -50,13 +50,13 @@ public class Signin extends AppCompatActivity {
                     // if the account exists go to the Items activity
                     if(signin()){
                         Toast.makeText(Signin.this,
-                                "signed in successfully", Toast.LENGTH_SHORT).show();
+                                R.string.signed_in_successfully, Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(Signin.this, ItemsActivity.class));
                     }
 
                     else{
                         Toast.makeText(Signin.this,
-                                "employee id or email or password is not correct", Toast.LENGTH_SHORT).show();
+                                R.string.employee_id_or_email_or_password_is_not_correct, Toast.LENGTH_SHORT).show();
                     }
                 }
             }

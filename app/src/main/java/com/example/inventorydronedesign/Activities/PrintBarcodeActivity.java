@@ -83,7 +83,7 @@ public class PrintBarcodeActivity extends AppCompatActivity {
             barcodeImage.setImageBitmap(bitmap);
         } catch(Exception e) {
             e.printStackTrace();
-            Toast.makeText(this, "barcode error " + e.toString(),
+            Toast.makeText(this, getString(R.string.barcode_error) + e.toString(),
                     Toast.LENGTH_SHORT).show();
         }
     }
