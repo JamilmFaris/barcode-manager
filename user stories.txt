@@ -1,0 +1,11 @@
+1)user can sign up you can create a new account locally.
+2)user can sign in you can sign in locally to a created account.
+3)user can logout from your account.
+
+4)user can create a new sheet to add new products to it
+5)select between sheets and display the selected sheet's products on the screen
+6)clear the selected sheet or delete all the database
+7)export the database to an Excel file
+8)scan for a new barcode.
+
+9)add a new product for a specific sheet  
